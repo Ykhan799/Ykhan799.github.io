@@ -1,0 +1,17 @@
+h1 {
+    font-size: 4em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#profile_pic {
+    height: 400px;
+}
+
+div {
+    text-align: center;
+}
+
+.social-icon {
+    height: 50px;
+}
