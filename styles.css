@@ -2,16 +2,44 @@ h1 {
     font-size: 4em;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    color: white;
 }
 
 #profile_pic {
-    height: 400px;
+    height: 100px;
 }
 
-div {
+.icons {
     text-align: center;
 }
 
 .social-icon {
     height: 50px;
+}
+
+.profile {
+    float:left;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#profInfo {
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 4pt;
+    color: rgb(102, 202, 196);
+}
+
+body {
+    background-image: url('images/AI.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+ul {
+    color: white;
 }
