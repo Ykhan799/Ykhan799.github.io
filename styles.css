@@ -2,7 +2,7 @@ h1 {
     font-size: 4em;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #profile_pic {
@@ -24,22 +24,23 @@ h1 {
 h2 {
     font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: black;
 }
 
 #profInfo {
     font-family: 'Courier New', Courier, monospace;
     text-indent: 4pt;
-    color: rgb(102, 202, 196);
-}
-
-body {
-    background-image: url('images/AI.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    color: black;
 }
 
 ul {
-    color: white;
+    color: black;
+}
+
+#BaseballTour {
+    height: 400px;
+}
+
+#CollegeTour {
+    height: 400px;
 }
