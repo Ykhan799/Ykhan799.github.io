@@ -1,46 +1,322 @@
-h1 {
-    font-size: 4em;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+html, body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: white;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-size: 18px;
     color: black;
 }
 
-#profile_pic {
+.navbar a:hover {
+    color: #c29c1e;
+}
+
+.navbar-titles {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.name {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 50px;
+}
+
+.contact-info {
+    opacity: 0.7;
+    text-align: center;
+    padding: 10px;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+.about-info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 150%;
+    color: black;
+    font-size: 1.1em;
+}
+
+.ya {
+    text-decoration: none;
+    color: black;
+}
+
+.ya:hover {
+    color: #668019;
+}
+
+.ya-linkedin {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.ya-github {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.ya-email {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.ya-resume {
+    color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 10px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.section-header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    opacity: 0.7;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.experience {
+    padding: 0 10px;
+}
+
+.column {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+}
+
+.row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row2 {
+    padding-top: 25px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #5eafe2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 150px;
+    padding: 15px;
+    text-align: left;
+}
+
+.card-img {
+    width: 50px;
+    height: auto;
+    float: left;
+    padding-right: 10px;
+}
+
+
+.card-open-source {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #e1602d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 280px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card-projects {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #d99fdb;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 500px;
+    padding: 20px;
+    text-align: left;
+}
+
+.column-open-source {
+    width: 31%;
+    float: left;
+    padding: 0 10px;
+}
+
+.column-projects {
+    width: 31%;
+    float: left;
+    padding: 0 10px;
+}
+
+
+.card-img-layout {
+    margin-top: -10px;
+}
+
+.card-title {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.duration {
+    font-style: normal;
+}
+
+.open-source-projects {
+    margin-top: -50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+}
+
+.skills-row {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Clear the row after all columns */
+.skills-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.certificates-row {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Clear the row after all columns */
+.certificates-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.certificates-column {
+    float: left;
+    width: auto;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50%;
+}
+
+.card-certificates {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #13a815;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     height: 100px;
+    padding: 20px;
+    text-align: left;
 }
 
-.icons {
-    text-align: center;
+.skills-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50%;
 }
 
-.social-icon {
-    height: 50px;
+.column-languages {
+    border: 5px dashed #048686;
+    background-color: #26aaaf; 
 }
 
-.profile {
-    float:left;
+.column-tools {
+    border: 5px solid #703272;
+    background-color: #d99fdb;
 }
 
-h2 {
-    font-size: 3em;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+
+.column-databases {
+    border: 5px dotted #a93305;
+    background-color: #e1602d;
 }
 
-#profInfo {
-    font-family: 'Courier New', Courier, monospace;
-    text-indent: 4pt;
-    color: black;
+.skills-languages {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 10px 0px;
 }
 
-ul {
-    color: black;
+.skills-tools {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 10px 0px;
 }
 
-#BaseballTour {
-    height: 400px;
+.skills-databases {
+    font-size: 20px;
+    line-height: 100%;
+    padding: 10px 0px;
 }
 
-#CollegeTour {
-    height: 400px;
-}
+
+

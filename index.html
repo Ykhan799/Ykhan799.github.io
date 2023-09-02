@@ -1,89 +1,321 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title> Yaseen's Website</title>
+        <title>Yaseen Khan</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Yaseen Khan</h1>
-        <div class="icons">
-            <a href="resume" target="_blank">
-                <img src="images/resume.png" alt="Yaseen's Resume" class="social-icon">
-            </a>
 
-            <a href="https://github.com/Ykhan799" target="_blank"> 
-                <img src="images/github.png" alt="Yaseen's github" class="social-icon">
-            </a>
-
-            <a href="https://www.linkedin.com/in/yaseenkkhan/" target="_blank">
-                <img src="images/linkedln.png" alt="Yaseen's Linkedln" class="social-icon">
-            </a>
-
-            <a href="mailto:yaseenkkhan@yahoo.com.edu" target="_blank">
-                <img src="images/mail.png" alt="Yaseen's school email" class="social-icon">
-
-            </a>
-        </div>
-        <h2>About</h2>
-        <div class="profile">
-            <img src="images/Profile Picture.jpeg" alt="Yaseen's picture" id="profile_pic">
-        </div>
-        <div id="profInfo">
-            <p>
-                Hi there, my name is Yaseen Khan and I am a 3rd year Computer Science student at UC Irvine.
-                I recently transferred from Saddleback/Irvine Valley College. I chose Computer Science 
-                because I love creating and making my ideas a reality.
-                Besides Computer Science, I also enjoy studying Mathematics, Physics, 
-                Economics, History, and Anthropology. Within Computer Science, I am leaning towards Software Engineering
-                or Data Science but I am exploring other fields like App Development and Algorithms. 
-            </p>
+        <!-- Navbar section -->
+        <div class="navbar">
+            <nav>
+                <ul class="navbar-titles">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#open-source">Open Source</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
         </div>
 
-        <h2>Projects</h2>
-        <a href="https://github.com/Ykhan799/CS-1D-Project-2-Baseball" target="_blank">
-            <h3>1. Baseball Touring App</h3>
-        </a>
-        <div class="Baseball">
-            <img src="images/baseball.png" alt="Baseball Project" id="BaseballTour">
+        <!-- Name and Photo Section -->
+        <div id="header">
+            <h1 class="name"> <strong>Yaseen Khan</strong></h1>
+            <img class="photo" src="images/Profile Picture.jpeg" alt="Yas Pic">
         </div>
 
-        <div id="baseballInfo">
-            <p>
-                A baseball touring application where Baseball Fans can view information about each baseball team, plan trips, and buy souvenirs. Additionally, the administrator can add and edit information about the stadiums.
-                Utilized several algorithms such as Dijkstra to find the shortest path across baseball stadiums. Built using C++, QT, and a database of baseball stadiums.
-
-            </p>
+        <!-- Contact icons -->
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/yaseenkkhan/" target="_blank"> <img src="images/linkedln.png" alt="Yaseen's Linkedln" class="ya ya-linkedin" title="Linkedin icon"></a>
+            <a href="https://github.com/Ykhan799" target="_blank"> <img src="images/github.png" alt="Yaseen's github" class="ya ya-github" title="Github icon"></a>
+            <a href="mailto:yaseenkkhan@yahoo.com" target="_blank"> <img src="images/mail.png" alt="Yaseen's work email" class="ya ya-email" title="Email icon"></a>
+            <a href="resume.pdf" target="_blank"><img src="images/resume.png" alt="Yaseen's Resume" class="ya ya-resume" title="Resume icon"></a>
         </div>
 
-        <a href="https://github.com/Ykhan799/CollegeTouringS21" target="_blank">
-            <h3>2. College Touring App</h3>
-        </a>
-        <div class="College">
-            <img src="images/college.png" alt="Baseball Project" id="CollegeTour">
-        </div>
+        <!-- About section -->
+        <section id="about">
+            <h2 class="section-header">About Me</h2>
+            <div class="about-info">
+                <p>Hello! Welcome to my website. My name is Yaseen and I recently graduated from the 
+                    University Of California, Irvine with a Bachelor's in Computer Science. 
+                </p>
 
-        <div id="collegeInfo">
-            <p>
-                A college touring application where students can view information about each college, plan trips, and buy souvenirs. Additionally, the administrator can add and edit information about the colleges.
-                Built using C++, QT, and a database of college stadiums.
+                <p>Software development is my favorite field because there is always something to learn with each new project.
+                    Most of my interest is in Backend development but I enjoy exploring other fields such as Full-stack development, App development,
+                    Data Science, and more.
+                </p>
 
-            </p>
-        </div>
+                <p>
+                    Outside of programming, I love playing video games, going on walks, and cooking. Some of my favorite games are Tears of the Kingdom, Breath of the Wild, and Clash of Clans.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2 class="section-header">Experience</h2>
+
+            <!-- Lark Health -->
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <p class="card-title">
+                        <img src="images/lark.png" class="card-img card-img-layout" alt="Lark Health logo">
+                            <strong>Lark Health</strong></p>
+                            <p class="duration">June 2022 - August 2022</p>
+                            <p><strong>Software Engineer Intern</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section-->
+        <section id="projects">
+            <h2 class="section-header">Projects</h2>
+            <p class="open-source-projects">(click the image icon for the source code and the youtube icon for the project demo)</p>
+
+            <div class="row">
+                <!-- Level Up Fitness Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/Ykhan799/CS-125-Project" target="_blank"><img src="images/fitness.png" alt="Level Up Fitness page" class="card-img card-img-layout"></a>
+                            <a href="https://www.youtube.com/watch?v=Y3PL2Q437Pc" target="_blank"><img src="images/youtube.png" class="card-img card-img-layout" alt="Youtube logo"></a>
+                            <strong>Level Up Fitness</strong></p>
+                        <p class="duration">January 2023 - March 2023</p>
+                        <p><strong>Total Lines of Code: </strong>1600</p>
+                        <p><strong>Project Type: </strong>Group(4 members)</p>
+                        <p><strong>Project Role: </strong>Team Lead</p>
+                        <p><strong>Tools: </strong>Kotlin, Android Studio, Firebase, Figma, API Ninjas Exercises API</p>
+                        <li>Designed an Android application that recommends workouts based on the user's information and workout preferences</li>
+                        <li>Created database schema to store the user's information and current level</li>
+                        <li>Connected Firebase database to Android app to enable email authentication and updating and retrieving user data</li>
+                        <li>Developed frontend prototype using Figma</li>
+                    </div>
+                </div>
+
+                <!-- FabFlix Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/Ykhan799/FabFlix" target="_blank"><img src="images/movies.jpg" alt="Movies Project page" class="card-img card-img-layout"></a>
+                            <a href="https://www.youtube.com/playlist?list=PLcevonNJqi61KlR9oifDZ9a5Tz__0IeiL" target="_blank"><img src="images/youtube.png" class="card-img card-img-layout" alt="Youtube logo"></a>
+                            <strong>FabFlix</strong></p>
+                        <p class="duration">September 2022 - December 2022</p>
+                        <p><strong>Total Lines of Code: </strong>6900</p>
+                        <p><strong>Project Type: </strong>Group(2 members)</p>
+                        <p><strong>Project Role: </strong>Developer</p>
+                        <p><strong>Tools: </strong>Java, MySQL, Tomcat, JDBC, HTTPS, RESTful APIs, JavaScript, jQuery, git, AWS, Android app development, Apache, JMeter, reCAPTCHA</p>
+                        <li>Built architecture from scratch with a partner. Setup AWS instance, MySQL, Tomcat, and imported a large database of movie information</li>
+                        <li>Developed an ETL pipeline to parse large XML files to augment the extensive database</li>
+                        <li>Created Android App using the same backend API as the web application</li>
+                    </div>
+                </div>
+
+                <!-- ICS Search Engine Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/aswinivundavalli/CS121-Search-Engine-12-Assignment3/tree/main" target="_blank"><img src="images/search.png" alt="Search Engine" class="card-img card-img-layout"></a>
+                            <strong>ICS Search Engine</strong></p>
+                        <p class="duration">November 2022 - December 2022</p>
+                        <p><strong>Total Lines of Code: </strong>500</p>
+                        <p><strong>Project Type: </strong>Group(4 members)</p>
+                        <p><strong>Project Role: </strong>Developer</p>
+                        <p><strong>Tools: </strong>Python, Information Retrieval</p>
+                        <li>Wrote a search engine capable of handling 10000+ web pages under the uci ics domain and maintained a query response time of under 300ms</li>
+                        <li>Developed and implemented an Indexer to process web pages and calculate tf-idf scores</li>
+                        <li>Implemented Cosine similarity method to rank web page results based on the tf-idf scoring system</li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd row Projects -->
+            <div class="row row2">
+                <!-- CodePath SuperSocial Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/CodePath-Super-Social/CodePath-Project" target="_blank"><img src="images/codepath-supersocial.png" class="card-img card-img-layout" alt="SuperSocial icon"></a>
+                            <strong>CodePath SuperSocial</strong>
+                        <p class="duration">Feburary 2022 - March 2022</p>
+                        <p><strong>Total Lines of Code: </strong>1200</p>
+                        <p><strong>Project Type: </strong>Group(4 members)</p>
+                        <p><strong>Project Role: </strong>Developer</p>
+                        <p><strong>Tools: </strong>Kotlin, Android Studio, Figma, Twitter API, Reddit API</p>
+                        <li>Designed an Android application that lets users view and cross-post to multiple social media platforms</li>
+                        <li>Developed frontend prototype using Figma</li>
+                        <li>Implemented frontend and backend features to view the user's feed using APIs</li>
+                    </div>
+                </div>
+
+                <!-- Baseball Touring Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/Ykhan799/CS-1D-Project-2-Baseball" target="_blank"><img src="images/baseball.jpg" class="card-img card-img-layout"></a>
+                            <strong>Baseball Touring App</strong></p>
+                        <p class="duration">March 2021 - May 2021</p>
+                        <p><strong>Total Lines of Code: </strong>9300</p>
+                        <p><strong>Project Type: </strong>Group(3 members)</p>
+                        <p><strong>Project Role: </strong>Product Manager</p>
+                        <p><strong>Tools: </strong>C++, QT, SQLite, DOxygen</p>
+                        <li>Designed a GUI application to let baseball fans virtually tour baseball stadiums, view team information, and purchase souvenirs</li>
+                        <li>Implemented admin features to add and edit baseball stadiums</li>
+                        <li>Created a database of baseball stadiums and developed backend features to extract data</li>
+                    </div>
+                </div>
+
+                <!-- College Touring Project -->
+                <div class="column-projects">
+                    <div class="card-projects">
+                        <p class="card-title">
+                            <a href="https://github.com/Ykhan799/CollegeTouringS21" target="_blank"><img src="images/college.jpg" class="card-img card-img-layout" alt="College pic"></a>
+                            <strong>College Touring App</strong></p>
+                        <p class="duration">January 2021 - March 2021</p>
+                        <p><strong>Total Lines of Code: </strong>4300</p>
+                        <p><strong>Project Type: </strong>Group(3 members)</p>
+                        <p><strong>Project Role: </strong>Developer</p>
+                        <p><strong>Tools: </strong>C++, QT, SQLite, DOxygen</p>
+                        <li>Designed a GUI application to let students virtually tour college campuses, purchase souvenirs, and view distances between each college campus</li>
+                        <li>Developed admin feature to add college campuses to the database</li>
+                        <li>Collaborated with another developer to implement college trips</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open Source Section -->
+        <section id="open-source">
+            <h2 class="section-header">Open Source</h2>
+            <p class="open-source-projects">(click the image icon for the source code)</p>
+
+            <div class="row">
+                <!-- Neetcode Leetcode-->
+                <div class="column-open-source">
+                    <div class="card-open-source">
+                        <p class="card-title">
+                            <a href="https://github.com/neetcode-gh/leetcode" target="_blank"><img src="images/leetcode.png" class="card-img card-img-layout" alt="Leetcode Link"></a>
+                            <strong>leetcode</strong></p>
+                            <p class="duration">August 2022 - Feburary 2023</p>
+                            <p><strong>Tools: </strong>Kotlin, Swift, C, Typescript, Go, C#</p>
+                            <li>Implemented leetcode solutions to improve problem solving skills and gain proficiency in other programming languages</li>
+                            <li>Contributed nearly <strong>3000 lines of code</strong></li>
+                    </div>
+                </div>
+
+                <!-- Neetcode Advanced Algorithms Course-->
+                <div class="column-open-source">
+                    <div class="card-open-source">
+                        <p class="card-title">
+                            <a href="https://github.com/mouseinthehouse/Advanced-Algorithms" target="_blank"><img src="images/algorithms.png" class="card-img card-img-layout" alt="Advanced Algorithms Link"></a>
+                            <strong>Advanced-Algorithms</strong></p>
+                            <p class="duration">December 2022 - January 2023</p>
+                            <p><strong>Tools: </strong>Swift</p>
+                            <li>Implemented Algorithms commonly used to solve leetcode problems</li>
+                            <li>Engaged in code reviews to ensure quality and maintain project progress</li>
+                            <li>Contributed <strong>1500 lines of code</strong></li>
+                    </div>
+                </div>
 
 
+                <!-- Neetcode Beginner Algorithms Course-->
+                <div class="column-open-source">
+                    <div class="card-open-source">
+                        <p class="card-title">
+                            <a href="https://github.com/mouseinthehouse/Data-Structures-and-Algorithms-for-Beginners" target="_blank"><img src="images/swift.jpg" class="card-img card-img-layout" alt="Beginner Algorithms Link"></a>
+                            <strong>Data-Structures-and-Algorithms-for-Beginners</strong></p>
+                         <p class="duration">November 2022 - December 2022</p>
+                         <p><strong>Tools: </strong>Swift</p>
+                         <li>Implemented fundamental Data Structures and Algorithms to help users prepare for leetcode</li>
+                         <li>Engaged in code reviews to ensure quality and maintain project progress</li>
+                         <li>Contributed <strong>1200 lines of code</strong></li>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <h2>Languages and Frameworks</h2>
-        <div class="Programming">
-            <ul>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>LaTeX</li>
-                <li>Git/Github</li>
-                <li>Linux</li>
-                <li>QT</li>
-            </ul>
-        </div>
+        <!-- Certificate Section -->
+        <section id="certificates">
+            <h2 class="section-header">Certificates</h2>
+            <p class="open-source-projects">(click the image icon for the certificate link)</p>
+            <div class="certificates-row">
+
+                <!-- CodePath Advanced Software Engineering-->
+                <div class="certificates-column">
+                    <div class="card-certificates">
+                        <p class="card-title">
+                            <a href="https://drive.google.com/file/d/1uE5sG9iLlohHR_NothbJ9dERAPbdKUfq/view?usp=sharing" target="_blank"><img src="images/codepath.png" class="card-img card-img-layout" alt="CodePath Course logo"></a>
+                            <strong>CodePath Advanced Software Engineering</strong>
+                            <p class="duration">May 2022 - August 2022</p>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CodePath Android Course -->
+                <div class="certificates-column">
+                    <div class="card-certificates">
+                        <p class="card-title">
+                            <a href="https://drive.google.com/file/d/12AAzQOYDcKMaNfkMOP3Gsuikhx4wbsBS/view?usp=sharing" target="_blank"><img src="images/android.jpg" class="card-img card-img-layout" alt="Android course pic"></a>
+                            <strong>CodePath Android Development</strong>
+                            <p class="duration">January 2022 - March 2022</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-header">Skills</h2>
+                <div class="skills-row">
+                    <div class="skills-column column-languages">
+                        <h3 class="skills-languages"><strong>Languages</strong></h3>
+                        <p>C++</p>
+                        <p>Java</p>
+                        <p>Python</p>
+                        <p>Kotlin</p>
+                        <p>Swift</p>
+                        <p>Assembly</p>
+                        <p>Typescript</p>
+                        <p>Javascript</p>
+                        <p>Go</p>
+                        <p>R</p>
+                        <p>LaTeX</p>
+                    </div>
+                    <div class="skills-column column-tools">
+                        <h3 class="skills-tools"><strong>Tools/Technologies</strong></h3>
+                        <p>Git</p>
+                        <p>Linux</p>
+                        <p>Android Studio</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Figma</p>
+                        <p>AWS</p>
+                        <p>Docker</p>
+                        <p>Grafana</p>
+                        <p>QT</p>
+                        <p>DOxygen</p>
+                    </div>
+                    <div class="skills-column column-databases">
+                        <h3 class="skills-databases"><strong>Databases</strong></h3>
+                        <p>MySQL</p>
+                        <p>PostgreSQL</p>
+                        <p>SQLite</p>
+                        <p>Firebase</p>
+                        <p>MongoDB</p>
+                        <p>Cassandra</p>
+                        <p>Apache Spark</p>
+                        <p>CouchDB</p>
+                        <p>Neo4j</p>
+                    </div>
+                </div>
+        </section>
+
     </body>
 </html>
