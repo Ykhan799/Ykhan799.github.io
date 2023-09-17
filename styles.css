@@ -2,6 +2,41 @@ html, body {
     overflow-x: hidden;
 }
 
+section {
+    place-items: left;
+    align-content: left;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.simple {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+.complex {
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 .navbar {
     background-color: white;
     top: 0;
@@ -56,7 +91,7 @@ html, body {
     padding-right: 100px;
     line-height: 150%;
     color: black;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 .ya {
@@ -202,10 +237,38 @@ html, body {
     padding: 0 10px;
 }
 
+.column-open-source:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.column-open-source:nth-child(3) {
+    transition-delay: 400ms;
+}
+
 .column-projects {
     width: 31%;
     float: left;
     padding: 0 10px;
+}
+
+.column-projects:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.column-projects:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.column-projects:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.column-projects:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.column-projects:nth-child(6) {
+    transition-delay: 1000ms;
 }
 
 
@@ -219,8 +282,21 @@ html, body {
     align-items: center;
 }
 
+.project-desc {
+    font-size: 17px;
+}
+
 .duration {
     font-style: normal;
+    font-size: 17px;
+}
+
+.position {
+    font-size: 17px;
+}
+
+.project-title {
+    font-size: 22px;
 }
 
 .open-source-projects {
@@ -316,6 +392,10 @@ html, body {
     font-size: 20px;
     line-height: 100%;
     padding: 10px 0px;
+}
+
+.certificates-column:nth-child(2) {
+    transition-delay: 400ms;
 }
 
 
