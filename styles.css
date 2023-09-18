@@ -217,7 +217,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #e1602d;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 280px;
+    height: auto;
     padding: 20px;
     text-align: left;
 }
@@ -226,7 +226,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #d99fdb;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 500px;
+    height: auto;
     padding: 20px;
     text-align: left;
 }
@@ -251,6 +251,7 @@ section {
     padding: 0 10px;
 }
 
+/* Staggers the delay time for animation */
 .column-projects:nth-child(2) {
     transition-delay: 200ms;
 }
@@ -336,19 +337,17 @@ section {
 }
 
 .certificates-column {
+    width: 31%;
     float: left;
-    width: auto;
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 50%;
+    padding: 0 10px;
 }
 
 .card-certificates {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #13a815;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 100px;
-    padding: 20px;
+    height: auto;
+    padding: 15px;
     text-align: left;
 }
 
@@ -398,5 +397,46 @@ section {
     transition-delay: 400ms;
 }
 
+
+
+/* Mobile device responsiveness */
+@media screen and (max-width: 700px) {
+    .skills-row {
+        flex-direction: column;
+        width: 50em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .certificates-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        width: 15em;
+        padding-bottom: 2em;
+    }
+
+    .column-projects {
+        width: 15em;
+        padding-bottom: 2em;
+    }
+
+    .column-open-source {
+        width: 15em;
+        padding-bottom: 2em;
+    }
+
+    .certificates-column {
+        width: 15em;
+        padding-bottom: 2em;
+    }
+}
 
 
