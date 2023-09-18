@@ -5,9 +5,6 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         }
-        else {
-            entry.target.classList.remove('show');
-        }
     });
 });
 
@@ -20,9 +17,6 @@ const observer2 = new IntersectionObserver((entries) => {
         console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('complex');
-        }
-        else {
-            entry.target.classList.remove('complex');
         }
     });
 });
