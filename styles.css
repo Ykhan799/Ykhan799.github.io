@@ -170,7 +170,7 @@ section {
 }
 
 .column {
-    width: 25%;
+    width: 31%;
     float: left;
     padding: 0 10px;
 }
@@ -200,8 +200,8 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #5eafe2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 150px;
-    padding: 15px;
+    height: auto;
+    padding: 20px;
     text-align: left;
 }
 
